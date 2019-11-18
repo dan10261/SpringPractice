@@ -15,14 +15,14 @@ public class UserController {
 	UserService userService;
 
 	@RequestMapping(value = "/login", method=RequestMethod.GET)
-	public String Login() {
+	public String login() {
 		return "login";
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String ValidateUser(@RequestParam String UserName,
+	public String validateUser(@RequestParam String UserName,
 			@RequestParam String Password, ModelMap model) {
-		if (userService.IsValidUser(UserName, Password)) {
+		if (userService.isValidUser(UserName, Password)) {
 			model.put("UserName", UserName);
 			return "welcome";
 		}
