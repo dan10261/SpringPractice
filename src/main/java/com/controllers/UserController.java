@@ -1,4 +1,4 @@
-package com.learning;
+package com.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
