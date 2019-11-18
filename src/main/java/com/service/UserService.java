@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 	private Logger logger = Logger.getLogger(UserService.class);	
-	public boolean IsValidUser(String UserName, String Password) {
+	public boolean isValidUser(String UserName, String Password) {
 		if (UserName.equals("springuser1@spring.com")
 				&& Password.equals("springpwd1"))
 			return true;
