@@ -26,7 +26,7 @@ public class UserController {
 			model.put("UserName", UserName);
 			return "welcome";
 		}
-		model.put("errorMessage", "Your email and password is invalid.");
+		model.put("errorMessage", "Your email or password is invalid.");
 		return "login";
 	}
 }
