@@ -8,8 +8,8 @@ import com.service.UserService;
 
 public class UserServiceTest {
 	@Test
-	public void IsValidUser(){
+	public void isValidUser(){
 		UserService userService = new UserService();		
-		assertTrue(userService.IsValidUser("springuser1@spring.com", "springpwd1"));
+		assertTrue(userService.isValidUser("springuser1@spring.com", "springpwd1"));
 	}
 }
